@@ -1,0 +1,56 @@
+@keyframes identifier {
+  0% {
+    color: black;
+  }
+
+  100% {
+    color: gray;
+  }
+}
+
+.booting-loader {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  transition: 1s all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  align-items: center;
+  justify-content: center;
+}
+
+.boot {
+  transition: 1s opacity;
+  cursor: none;
+  animation: 0.1s ease-out 0s 1 load !important;
+
+  .applogo {
+    position: absolute;
+    z-index: 50;
+  }
+}
+
+.vanished {
+  opacity: 0;
+  z-index: 90;
+  background-color: black;
+  width: 0vw;
+  height: 0vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  transition: 1s all;
+  cursor: none;
+
+  .applogo {
+    opacity: 0;
+  }
+  .applogo2 {
+    opacity: 0;
+  }
+}

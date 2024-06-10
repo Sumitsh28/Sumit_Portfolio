@@ -1,0 +1,18 @@
+.glow-effect {
+  border-radius: 50%;
+  animation: glowAnimation 3s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes glowAnimation {
+  0% {
+    filter: drop-shadow(0 0 10px #9aa3af22);
+  }
+  100% {
+    filter: drop-shadow(0 0 20px #9aa3af);
+  }
+}
+
+.glow-effect img {
+  animation: glowAnimation 2s infinite alternate;
+}

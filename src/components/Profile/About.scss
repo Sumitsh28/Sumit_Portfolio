@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Nunito:wght@200;300;400;500;600;700&family=Raleway:wght@200;300;400;500;600;700&display=swap");
+
+.text__zonee {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #ff4545;
+    font-family: "Raleway", sans-serif;
+    position: relative;
+    animation: 1s ease 0s 1 slideInFromLeft;
+    letter-spacing: 1px;
+    margin-left: 0.5em;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+      margin-bottom: 0;
+      margin-left: 0;
+      align-self: center;
+    }
+
+    @keyframes slideInFromLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-100px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    &::before {
+      content: "<h1>";
+      color: #ff4545;
+      font-size: 2rem;
+      position: absolute;
+      margin-top: -40px;
+      opacity: 0.6;
+      left: -0.9em;
+      font-family: "La Belle Aurore", cursive;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+        margin-top: -20px;
+      }
+    }
+
+    &::after {
+      content: "</h1>";
+      color: #ff4545;
+      font-size: 2rem;
+      position: absolute;
+      margin-top: 3em;
+      margin-left: -1em;
+      opacity: 0.6;
+      font-family: "La Belle Aurore", cursive;
+      animation: fadeIn 1s 1.7s backwards;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+        margin-left: 0.6em;
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
