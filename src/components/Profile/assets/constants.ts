@@ -23,10 +23,10 @@ const profiles = [
   {
     logo: cf,
     name: "Codeforces",
-    id: "sumit2801",
+    id: "",
     max_Rating: "934",
     curr_Rating: "934",
-    link: "https://codeforces.com/profile/sumit2801",
+    link: "https://codeforces.com/profile/",
   },
   {
     logo: gfg,
